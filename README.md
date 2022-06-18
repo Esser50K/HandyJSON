@@ -4,7 +4,7 @@ HandyJSON is a framework written in Swift which to make converting model objects
 
 Compared with others, the most significant feature of HandyJSON is that it does not require the objects inherit from NSObject(**not using KVC but reflection**), neither implements a 'mapping' function(**write value to memory to achieve property assignment**).
 
-HandyJSON is totally depend on the memory layout rules infered from Swift runtime code. We are watching it and will follow every bit if it change.
+HandyJSON is totally depend on the memory layout rules inferred from Swift runtime code. We are watching it and will follow every bit if it change.
 
 [![Build Status](https://travis-ci.org/alibaba/HandyJSON.svg?branch=master)](https://travis-ci.org/alibaba/HandyJSON)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -193,7 +193,7 @@ But also notice that, if you have a designated initializer to override the defau
 
 ## Support Enum Property
 
-To be convertable, An `enum` must conform to `HandyJSONEnum` protocol. Nothing special need to do now.
+To be convertible, An `enum` must conform to `HandyJSONEnum` protocol. Nothing special need to do now.
 
 ```swift
 enum AnimalType: String, HandyJSONEnum {
@@ -475,3 +475,4 @@ It’s all like what we do on deserialization. A property which is excluded, it 
 # License
 
 HandyJSON is released under the Apache License, Version 2.0. See LICENSE for details.
+
